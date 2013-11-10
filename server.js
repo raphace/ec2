@@ -15,7 +15,6 @@ http.createServer(function (request, response) {
 				'</div>' +
 				'</body>' +
 				'</html>';
-
 	response.writeHead(200, {'Content-Type': 'text/plain'});
 	response.write(body);
 	response.end();
