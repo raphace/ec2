@@ -7,7 +7,7 @@ http.createServer(function (request, response) {
 				'<head>' +
 				'<meta http-equiv="Content-Type" content="text/html; ' +
 				'charset=UTF-8" />' +
-				'<title>Welcome to my EC2 Site' +
+				'<title>Welcome to my EC2 Site</title>' +
 				'</head>' +
 				'<body style="background-color:#333333;">' +
 				'<div style="width:100%; color:#FFFFFF; text-align:center; font-family:Arial;">' +
