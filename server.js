@@ -4,7 +4,12 @@ var fs = require('fs');
 
 http.createServer(function (request, response) {
 
-	var filename = request.url || "index.html";
+	if (!request.url || request.url == "/")
+		filename = "/index.html";
+	else
+		filename = request.url;
+
+	var filename;
 	var ext = path.extname(filename);
 	var localPath = __dirname;
 	var validExtensions = {
